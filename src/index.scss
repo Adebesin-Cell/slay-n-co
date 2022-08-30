@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Germania One Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Germania One Regular'), url('./assets/fonts/GermaniaOne-Regular.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --unit: 10px;
+  --Satoshi: 'Satoshi', sans-serif;
+  --Oleo-Script: 'Oleo Script', cursive;
+
+  //font size
+
+  --size-xs: 12px;
+  --size-s: 14px;
+  --size-m: 16px;
+  --size-l: 24px;
+  --size-xl: 32px;
+  --size-2xl: 48px;
+
+  //spacing
+
+  --span-xs: var(--unit);
+  --span-s: calc(var(--unit) * 2);
+  --span-m: calc(var(--unit) * 3);
+  --span-l: calc(var(--unit) * 4);
+  --span-xl: calc(var(--unit) * 5);
+  --span-2xl: calc(var(--unit) * 6);
+
+  //font weights
+  --weight-xsm: 300;
+  --weight-sm: 400;
+  --weight-md: 500;
+  --weight-lg: 600;
+  --weight-xlg: 700;
+  --weight-xxlg: 800;
+  --weight-2xxlg: 900;
+
+  --black: #000000;
+  --cyan: #229198;
+  --dark-cyan: #3c8067;
+  --cream: #f2ebe3;
+  --very-dark-blue: #1c232b;
+  --white: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--Satoshi);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  // background: #F7F7F7;
+  // background: rgba(34, 145, 152, 0.01);
+}
+
+.container {
+  @media only screen and (min-width: 1800px) {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }
+
+  @media only screen and (max-width: 1799px) {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-left: var(--span-s) !important;
+    padding-right: var(--span-s) !important;
+  }
+}
